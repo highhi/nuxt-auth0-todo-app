@@ -1,0 +1,36 @@
+{
+  "name": "nuxt-auth0-todo-app",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "kazu <kazu8160@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "pm2 start ./process.yml --no-daemon",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.1.1",
+    "auth0-lock": "^11.7.1",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "helmet": "^3.12.1",
+    "jwt-decode": "^2.2.0",
+    "nuxt": "^1.4.0",
+    "pm2": "^2.10.4",
+    "query-string": "^6.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}
